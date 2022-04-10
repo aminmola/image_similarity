@@ -1,6 +1,6 @@
 IMG_PATH = "../input/animals-data/dataset/"
-IMG_HEIGHT = 512  # The images are already resized here
-IMG_WIDTH = 512  # The images are already resized here
+IMG_HEIGHT = 512  
+IMG_WIDTH = 512  
 
 SEED = 42
 TRAIN_RATIO = 0.75
@@ -15,10 +15,11 @@ FULL_BATCH_SIZE = 32
 
 ###### Train and Test time #########
 
+# DATA_PATH = "../test-images"
 DATA_PATH = "../data/images/"
-AUTOENCODER_MODEL_PATH = "baseline_autoencoder.pt"
-ENCODER_MODEL_PATH = "../data/models/deep_encoder.pt"
-DECODER_MODEL_PATH = "../data/models/deep_decoder.pt"
+AUTOENCODER_MODEL_PATH = "../data/models/baseline_autoencoder.pt"
+ENCODER_MODEL_PATH = "../data/models/baseline_encoder.pt"
+DECODER_MODEL_PATH = "../data/models/baseline_decoder.pt"
 EMBEDDING_PATH = "../data/models/data_embedding_f.npy"
 EMBEDDING_SHAPE = (1, 256, 16, 16)
 # TEST_RATIO = 0.2
